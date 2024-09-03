@@ -5,3 +5,11 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+.section1-wrapper {
+    background: url("../../assets/herobg.png") no-repeat center;
+}
+.li-icon li {
+    display: flex; 
+    /* align-items: center; */
+    gap: 10px;
+}

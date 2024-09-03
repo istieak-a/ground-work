@@ -1,6 +1,6 @@
 import React from 'react'
 import Section1 from './Section1'
-import './Homepage.css'; 
+// import './Homepage.css'; 
 
 const Homepage = () => {
   return (
