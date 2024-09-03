@@ -1,22 +1,22 @@
 .section1-wrapper {
-    background: url("../../assets/herobg.png") no-repeat center center/cover;
+    background: url("../../assets/herobg.png") no-repeat center;
 }
 .li-icon li {
     display: flex; 
     /* align-items: center; */
     gap: 10px;
 }
-.text-after {
+/* .text-after {
     position: relative;
     z-index: 999;
 }
 .text-after::before {
     content: "who we are";
     position: absolute;
-    /* width: 100%; */
-    /* height: 2px; */
+    width: 100%;
+    height: 2px;
     color: #465365;
     top: -10px;
     z-index: 5;
     font-size: 25px;
-}
+} */
