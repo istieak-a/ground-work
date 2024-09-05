@@ -1,31 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .section1-wrapper {
-    background: url("./assets/herobg.png") no-repeat center;
-    background-size: cover;
+  background: url("./assets/herobg.png") no-repeat center;
+  background-size: cover;
 }
 .li-icon li {
-    display: flex; 
-    /* align-items: center; */
-    gap: 10px;
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
 }
 .line-before {
-    position: relative;
-    display: inline-block;
-    padding-left: 70px;
+  position: relative;
+  display: inline-block;
+  padding-left: 70px;
 }
 .line-before::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 60px;
-    height: 2px;
-    margin-right: 10px;
-    background-color: #ffffffa2;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  margin-right: 10px;
+  background-color: #ffffffa2;
+}
+.stroke-white {
+  -webkit-text-stroke: 1px white; /* Apply a 2px white outline */
+}
+
+.stroke-2 {
+  stroke-width: 2px;
+}
+
+.footer-links a,
+p {
+  @apply flex items-center gap-4 text-[16px];
+}
+.footer-links span {
+  @apply text-3xl text-primary;
 }
