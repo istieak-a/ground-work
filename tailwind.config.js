@@ -12,15 +12,6 @@ export default {
       colors: {
         primary: '#409b96',
       },
-      keyframes: {
-        'slide-left': {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
-      },
-      animation: {
-        'slide-left-infinite': 'slide-left 8s linear forwards',
-      },
     },
   },
   plugins: [],
