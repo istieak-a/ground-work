@@ -7,7 +7,7 @@ import Section4 from './Section4'
 
 const Homepage = () => {
   return (
-    <div>
+    <div className='bg-black'>
         <Section1 />
         <Section2 />
         <Section3 />
