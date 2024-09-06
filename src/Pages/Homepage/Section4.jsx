@@ -28,7 +28,8 @@ const Section4 = () => {
     },
   ];
   return (
-    <div className="bg-black py-10 px-8 md:px-16 flex flex-col gap-10">
+    <div className="bg-black">
+      <div className="max-w-7xl mx-auto py-10 px-8 md:px-16 flex flex-col gap-10">
       <h1 className="text-center text-[64px] font-semibold text-primary">
         <span className="stroke-white stroke-2 text-transparent">
           glimpse of our
@@ -41,6 +42,7 @@ const Section4 = () => {
           <Videonlogo key={index} img={item.img} vid={item.vid} />
         ))}
       </div>
+    </div>
     </div>
   );
 };

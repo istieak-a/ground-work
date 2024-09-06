@@ -9,7 +9,8 @@ import vid1 from "../../assets/video.mp4";
 
 const Section1 = () => {
   return (
-    <div className="section1-wrapper flex flex-col gap-8 pt-8 text-white">
+    <div className=" section1-wrapper">
+      <div className="max-w-7xl mx-auto flex flex-col gap-8 pt-8 text-white">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-[24px] font-semibold md:text-[45px]">
           boutique creative agency
@@ -67,7 +68,9 @@ const Section1 = () => {
           </ul>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,192C384,181,480,171,576,192C672,213,768,267,864,266.7C960,267,1056,213,1152,181.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,192C384,181,480,171,576,192C672,213,768,267,864,266.7C960,267,1056,213,1152,181.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
     </div>
   );
 };

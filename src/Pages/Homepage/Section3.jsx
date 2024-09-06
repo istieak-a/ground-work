@@ -49,7 +49,8 @@ const Section3 = () => {
   }, []);
 
   return (
-    <div className="bg-black py-6 text-white">
+    <div className="bg-black">
+    <div className=" py-6 text-white max-w-7xl mx-auto">
       <div className="px-8 md:px-20">
         <p className="line-before text-[13px]">our clients</p>
         <h1 className="text-[36px] font-semibold">
@@ -108,6 +109,7 @@ const Section3 = () => {
           ))}
         </ReactSimplyCarousel>
       </div>
+    </div>
     </div>
   );
 };
