@@ -9,6 +9,25 @@
   background: #409b96;
   color: #fff;
 }
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
 .section1-wrapper {
   background: url("./assets/herobg.png") no-repeat center;
   background-size: cover;
