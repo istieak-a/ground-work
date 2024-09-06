@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 const Section4 = () => {
+  const { scroll } = useLocomotiveScroll();
+  const sectionRef = useRef(null);
+  const titleRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"]
+  });
+
+  const titleX = useTransform(scrollYProgress, [0, 1], ["100%", "-100%"]);
+
+  useEffect(() => {
+    if (scroll) {
+      scroll.on("scroll", ({ limit, scroll }) => {
+        const progress = scroll.y / limit.y;
+        titleRef.current.style.transform = `translateX(${100 - progress * 200}%)`;
+      });
+    }
+  }, [scroll]);
+
   const data = [
     {
       img: "https://groundwork.ae/wp-content/uploads/Sephora-emblem-removebg-preview.png",
@@ -27,32 +49,37 @@ const Section4 = () => {
       vid: "https://groundwork.ae/wp-content/uploads/caeli-1.mp4",
     },
   ];
-  return (
-    <div className="bg-black">
-      <div className="max-w-7xl mx-auto py-10 px-8 md:px-16 flex flex-col gap-10">
-      <h1 className="text-center text-[64px] font-semibold text-primary">
-        <span className="stroke-white stroke-2 text-transparent">
-          glimpse of our
-        </span>{" "}
-        work
-      </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {data.map((item, index) => (
-          <Videonlogo key={index} img={item.img} vid={item.vid} />
-        ))}
+  return (
+    <div className="bg-black" ref={sectionRef}>
+      <div className="max-w-7xl mx-auto py-10 px-8 md:px-16 flex flex-col gap-10">
+        <motion.h1
+          ref={titleRef}
+          className="text-right text-[64px] font-semibold text-primary whitespace-nowrap"
+          style={{ x: titleX }}
+        >
+          <span className="stroke-white stroke-2 text-transparent">
+            glimpse of our
+          </span>{" "}
+          work
+        </motion.h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {data.map((item, index) => (
+            <Videonlogo key={index} img={item.img} vid={item.vid} />
+          ))}
+        </div>
       </div>
     </div>
+  );
+};
+
+const Videonlogo = ({ img, vid }) => {
+  return (
+    <div className="flex flex-col gap-3 items-center justify-center">
+      <img className="h-[150px] w-[100px] object-contain" src={img} alt="logo" />
+      <video src={vid} autoPlay loop muted></video>
     </div>
   );
 };
 
 export default Section4;
-const Videonlogo = ({ img, vid }) => {
-  return (
-    <div className="flex flex-col gap-3 items-center justify-center">
-      <img className="h-[150px] w-[100px]  object-contain" src={img} alt="logo" />
-      <video src={vid} autoPlay loop muted></video>
-    </div>
-  );
-};
