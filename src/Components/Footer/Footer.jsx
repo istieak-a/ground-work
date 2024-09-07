@@ -21,7 +21,7 @@ const Footer = () => {
   };
 
   const projectTitleWords = ["about", "your", "next", "project"];
-  const contactTitleWords = ["contact", "us"];
+  const contactTitleWords = ["contact"];
 
   return (
     <div className="bg-black">
@@ -72,7 +72,15 @@ const Footer = () => {
                 {word}
               </motion.span>
             ))}{" "}
-            <span className="text-primary">us</span>
+            <motion.span
+              variants={wordVariant}
+              initial="hidden"
+              animate={isContactInView ? "visible" : "hidden"}
+              custom={contactTitleWords.length}
+              className="inline-block text-primary"
+            >
+              us
+            </motion.span>
           </h1>
 
           <div className="footer-links flex flex-col gap-3 text-white">
