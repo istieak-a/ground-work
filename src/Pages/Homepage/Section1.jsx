@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 import { FaImages, FaLaptop, FaGoogle } from "react-icons/fa";
 import { FaChartColumn, FaIdCard } from "react-icons/fa6";
 import vid1 from "../../assets/video.mp4";
+import VanillaTilt from 'vanilla-tilt';
 
 const Section1 = () => {
+  useEffect(() => {
+    VanillaTilt.init(document.querySelectorAll('.tilt-div'), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5,
+    });
+  }, []);
   // Variants for animating title words
   const titleWordVariant = {
     hidden: { opacity: 0, y: 50 }, // Adjusted to make the animation come from just below the h1
@@ -69,7 +78,7 @@ const Section1 = () => {
             variants={videoVariant}
             initial="hidden"
             animate="visible"
-            className="overflow-hidden rounded-lg md:hidden md:w-[30%]"
+            className="overflow-hidden rounded-lg tilt-div md:hidden md:w-[30%]"
           >
             <video
               src={vid1}
@@ -85,7 +94,7 @@ const Section1 = () => {
             variants={leftVariant}
             initial="hidden"
             animate="visible"
-            className="flex flex-col items-center justify-center gap-10 rounded-lg bg-[#dbd9d9] bg-opacity-20 px-10 py-12 text-center md:w-[35%] md:py-0"
+            className="flex flex-col items-center justify-center gap-10 rounded-lg tilt-div bg-[#dbd9d9] bg-opacity-20 px-10 py-12 text-center md:w-[35%] md:py-0"
           >
             <h1 className="text-[25px] font-medium">who we are</h1>
             <p className="text-[15px]">
@@ -100,7 +109,7 @@ const Section1 = () => {
             variants={videoVariant}
             initial="hidden"
             animate="visible"
-            className="hidden overflow-hidden rounded-lg md:block md:w-[30%]"
+            className="hidden overflow-hidden tilt-div rounded-lg md:block md:w-[30%]"
           >
             <video
               src={vid1}
@@ -116,7 +125,7 @@ const Section1 = () => {
             variants={rightVariant}
             initial="hidden"
             animate="visible"
-            className="flex flex-col items-center justify-center gap-10 rounded-lg bg-[#dbd9d9] bg-opacity-20 px-10 py-12 md:w-[35%] md:py-0"
+            className="flex flex-col items-center tilt-div justify-center gap-10 rounded-lg bg-[#dbd9d9] bg-opacity-20 px-10 py-12 md:w-[35%] md:py-0"
           >
             <h1 className="text-[25px] font-medium">what we do</h1>
             <ul className="li-icon flex flex-col gap-2 text-[15px]">
