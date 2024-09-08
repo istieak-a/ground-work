@@ -18,7 +18,7 @@ const Header = () => {
     <div className="flex items-center justify-between bg-black px-5 py-6 md:flex-col md:gap-5">
       <h1 className="md:hidden"></h1>
       <Link to={"/"}>
-        <img className="w-[110px]" src={logo} alt="logo" />
+        <img className="w-[160px]" src={logo} alt="logo" />
       </Link>
       <div className="hidden gap-8 font-sans text-[16px] text-white md:flex">
         <Link
