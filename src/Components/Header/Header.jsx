@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/branding_covered_logo.jpeg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
