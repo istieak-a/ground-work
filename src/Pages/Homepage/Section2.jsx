@@ -69,7 +69,7 @@ const Section2 = () => {
           animate={isInView ? "visible" : "hidden"}
           className="text-[15.4px] text-[#C0C0C0]"
         >
-          groundwork is a complete digital solutions agency that has been in
+          Branding Covered is a complete digital solutions agency that has been in
           operation since 2019 and is dedicated to helping brands build their
           online presence and achieve their online goals.
         </motion.p>
