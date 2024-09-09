@@ -68,7 +68,7 @@ const Section1 = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 1.2 } }}
           >
-            based in Dubai, UAE
+            based in New York
           </motion.p>
         </div>
 

@@ -106,7 +106,7 @@ const Footer = () => {
               <span>
                 <FaLocationArrow />
               </span>{" "}
-              613 The metropolis Tower Business Bay, Dublin
+              178 Columbus Ave, New York, NY 10023
             </a>
           </div>
         </div>
