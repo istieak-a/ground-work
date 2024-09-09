@@ -52,9 +52,9 @@ const Footer = () => {
               .
             </motion.span>
           </h1>
-          <button className="mt-5 border px-14 py-5 text-[13px] text-white hover:bg-white hover:text-black">
+          <a href="mailto:info@brandingcovered.com" className="mt-5 border px-14 py-5 text-[13px] text-white hover:bg-white hover:text-black">
             get in touch
-          </button>
+          </a>
         </div>
 
         {/* Contact Section */}
@@ -102,12 +102,12 @@ const Footer = () => {
               </span>{" "}
               +1000000000
             </a>
-            <a href="mailto:info@brandingcovered.com">
+            <p>
               <span>
                 <FaLocationArrow />
               </span>{" "}
               178 Columbus Ave, New York, NY 10023
-            </a>
+            </p>
           </div>
         </div>
       </div>
