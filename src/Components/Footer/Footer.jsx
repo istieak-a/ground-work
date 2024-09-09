@@ -90,18 +90,18 @@ const Footer = () => {
               </span>{" "}
               info@brandingcovered.com
             </a>
-            <a href="tel:+00000000">
+            {/* <a href="tel:+00000000">
               <span>
                 <IoCall />
               </span>{" "}
               +1000000000
-            </a>
-            <a href="tel:+00000000">
+            </a> */}
+            {/* <a href="tel:+00000000">
               <span>
                 <IoCall />
               </span>{" "}
               +1000000000
-            </a>
+            </a> */}
             <p>
               <span>
                 <FaLocationArrow />
