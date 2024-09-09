@@ -25,7 +25,7 @@ const Section2 = () => {
   return (
     <div
       ref={ref} // Attaching the ref to monitor visibility
-      className="flex items-end justify-end bg-black py-10"
+      className="flex items-end justify-start bg-black max-w-7xl mx-auto ps-10 py-10"
     >
       {/* Animate the video */}
       {/* <motion.div
