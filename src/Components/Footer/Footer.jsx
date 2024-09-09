@@ -88,7 +88,7 @@ const Footer = () => {
               <span>
                 <MdEmail />
               </span>{" "}
-              info@groundwork.com
+              info@brandingcovered.com
             </a>
             <a href="tel:+00000000">
               <span>
@@ -102,12 +102,12 @@ const Footer = () => {
               </span>{" "}
               +1000000000
             </a>
-            <p>
+            <a href="mailto:info@brandingcovered.com">
               <span>
                 <FaLocationArrow />
               </span>{" "}
               613 The metropolis Tower Business Bay, Dublin
-            </p>
+            </a>
           </div>
         </div>
       </div>
