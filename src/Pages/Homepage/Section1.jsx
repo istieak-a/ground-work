@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 import { FaImages, FaLaptop, FaGoogle } from "react-icons/fa";
 import { FaChartColumn, FaIdCard } from "react-icons/fa6";
-import vid1 from "../../assets/video.mp4";
+import vid1 from "../../assets/hero_video.mp4";
 import VanillaTilt from 'vanilla-tilt';
 
 const Section1 = () => {
