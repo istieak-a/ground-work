@@ -25,17 +25,17 @@ const Section2 = () => {
   return (
     <div
       ref={ref} // Attaching the ref to monitor visibility
-      className="flex flex-col-reverse gap-20 md:flex-row bg-black py-10"
+      className="flex items-end justify-end bg-black py-10"
     >
       {/* Animate the video */}
-      <motion.div
+      {/* <motion.div
         variants={videoVariant}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         className="rounded-tr-3xl rounded-br-3xl overflow-hidden md:w-[65%]"
       >
         <video src={video} autoPlay loop muted></video>
-      </motion.div>
+      </motion.div> */}
 
       {/* Animate the text */}
       <motion.div
