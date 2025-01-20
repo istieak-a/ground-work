@@ -1,28 +1,28 @@
-import React from 'react';
+import React from "react";
+
+import vid1 from "../../assets/videos/3.mp4";
+import vid2 from "../../assets/videos/reel-4-new.mp4";
+import vid3 from "../../assets/videos/green-hill22.mp4";
+import vid4 from "../../assets/videos/Revision-.mov";
+import vid5 from "../../assets/videos/Vhs-reel.mov";
+import vid6 from "../../assets/videos/Reel-1.mov";
 
 const SocialMedia = () => {
   const data = {
-    videos: [
-      "https://groundwork.ae/wp-content/uploads/3.mp4",
-      "https://groundwork.ae/wp-content/uploads/reel-4-new.mp4",
-      "https://groundwork.ae/wp-content/uploads/green-hill22.mp4",
-      "https://groundwork.ae/wp-content/uploads/Revision-.mov",
-      "https://groundwork.ae/wp-content/uploads/Vhs-reel.mov",
-      "https://groundwork.ae/wp-content/uploads/Reel-1.mov"
-    ]
+    videos: [vid1, vid2, vid3, vid4, vid5, vid6],
   };
 
   return (
-    <div className='bg-black text-white'>
-      <div className='px-8 md:px-16 py-12 max-w-7xl mx-auto'>
-        <p className='line-before text-[13px]'>recent work</p>
-        <h1 className='text-[36px] font-semibold'>
-          social <span className='text-primary'>media</span>
+    <div className="bg-black text-white">
+      <div className="px-8 md:px-16 py-12 max-w-7xl mx-auto">
+        <p className="line-before text-[13px]">recent work</p>
+        <h1 className="text-[36px] font-semibold">
+          social <span className="text-primary">media</span>
         </h1>
-        <p className='text-[15.4px] text-[#C0C0C0] pt-3'>
+        <p className="text-[15.4px] text-[#C0C0C0] pt-3">
           we analyse your data and create a customised strategy just for you.
         </p>
-        <p className='text-[15.4px] text-[#C0C0C0]'>
+        <p className="text-[15.4px] text-[#C0C0C0]">
           we are the key to your social media success.
         </p>
       </div>
