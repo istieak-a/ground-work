@@ -42,18 +42,18 @@ const Section4 = () => {
   }, [scroll, isMobile]);
 
   const data = [
-    {
-      img: "https://groundwork.ae/wp-content/uploads/Sephora-emblem-removebg-preview.png",
-      vid: "https://groundwork.ae/wp-content/uploads/Untitled-design-3.mp4",
-    },
+    // {
+    //   img: "https://groundwork.ae/wp-content/uploads/Sephora-emblem-removebg-preview.png",
+    //   vid: "https://groundwork.ae/wp-content/uploads/Untitled-design-3.mp4",
+    // },
     {
       img: "https://groundwork.ae/wp-content/uploads/jordan-logo-wy5n6mg094axmhwk-removebg-preview-1.png",
       vid: "https://groundwork.ae/wp-content/uploads/Untitled-design.mp4",
     },
-    {
-      img: "https://groundwork.ae/wp-content/uploads/warehouse.svg",
-      vid: "https://groundwork.ae/wp-content/uploads/Untitled-design-1-2.mp4",
-    },
+    // {
+    //   img: "https://groundwork.ae/wp-content/uploads/warehouse.svg",
+    //   vid: "https://groundwork.ae/wp-content/uploads/Untitled-design-1-2.mp4",
+    // },
     {
       img: "https://groundwork.ae/wp-content/uploads/Layer-30.png",
       vid: "https://groundwork.ae/wp-content/uploads/mawkini.mp4",
